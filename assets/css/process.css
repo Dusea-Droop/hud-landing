@@ -1,0 +1,62 @@
+/* ============================================
+   БЛОК 5: ЭТАПЫ РАБОТЫ
+   ============================================ */
+.process {
+  padding: 100px 0;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.process__step {
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  border-left: 3px solid #4d6bfe;
+  position: relative;
+}
+
+.process__step::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(77, 107, 254, 0.06);
+  line-height: 1;
+}
+
+.process__step h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.process__step p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .process__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .process__steps {
+    grid-template-columns: 1fr;
+  }
+  .process__step::before {
+    font-size: 36px;
+  }
+}

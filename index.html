@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CUSTOM-HUD</title>
+  
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Все CSS-блоки -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/stats.css" />
+  <link rel="stylesheet" href="assets/css/features.css" />
+  <link rel="stylesheet" href="assets/css/process.css" />
+  <link rel="stylesheet" href="assets/css/benefits.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/cases.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        CUSTOM<span class="logo__accent">HUD</span>
+        <span class="logo__badge">PRO</span>
+      </a>
+
+      <ul class="nav__list">
+  <li><a href="#features">Возможности</a></li>
+  <li><a href="#process">Этапы</a></li>
+  <li><a href="#cases">Кейсы</a></li>    <!-- ← Добавьте эту строку -->
+  <li><a href="#stats">Цифры</a></li>
+  <li><a href="#contact" class="nav__cta">Связаться</a></li>
+</ul>
+
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="dot"></span>
+          Студия кастомных HUD для CS2 / DOTA2
+        </div>
+        <h1 class="hero__title">
+          HUD, который <span class="highlight">выделяет</span> ваш турнир
+        </h1>
+        <p class="hero__desc">
+          Разрабатываем профессиональные оверлеи для трансляций и турниров: счёт, статистика, killfeed и брендинг под ваш проект.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">
+            <i class="fas fa-rocket"></i> Заказать проект
+          </a>
+          <a href="#features" class="btn btn--outline">
+            <i class="fas fa-play"></i> Смотреть возможности
+          </a>
+        </div>
+        <div class="hero__trust">
+          <span><i class="fas fa-check-circle"></i> 20+ проектов</span>
+          <span><i class="fas fa-bolt"></i> Быстрый запуск</span>
+          <span><i class="fas fa-headset"></i> Поддержка 24/7</span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+  <div class="hero__hud-preview" style="padding: 0; overflow: hidden;">
+    <!-- ФОТО -->
+    <img 
+      src="assets/images/hud-screenshot.png" 
+      alt="Кастомный HUD для трансляций"
+      style="width: 100%; height: 100%; display: block; border-radius: 24px;"
+    />
+    
+    <!-- Плавающие бейджи -->
+    <div class="floating-badge floating-badge--1">
+      <i class="fas fa-image"></i> Готовый дизайн
+    </div>
+    <div class="floating-badge floating-badge--2">
+      <i class="fas fa-palette"></i> Custom Brand
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item" data-count="20">
+        <span class="stats__number">0</span>
+        <span class="stats__label">Завершённых проектов</span>
+      </div>
+      <div class="stats__item" data-count="120">
+        <span class="stats__number">0</span>
+        <span class="stats__label">Трансляций с нашим HUD</span>
+      </div>
+      <div class="stats__item" data-count="100">
+        <span class="stats__number">0</span>
+        <span class="stats__label">Довольных клиентов</span>
+      </div>
+      <div class="stats__item" data-count="24/7">
+        <span class="stats__number">0</span>
+        <span class="stats__label">Часа поддержки</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <span class="section-label">Возможности</span>
+      <h2 class="section-title">Всё для профессиональной трансляции</h2>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-crosshairs"></i></div>
+          <h3>Live-счёт и статистика</h3>
+          <p>Актуальные данные матча в реальном времени: счёт, раунды, экономика и персональная статистика игроков.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Брендинг под турнир</h3>
+          <p>Логотипы, цвета и шрифты вашего события — HUD полностью адаптируется под айдентику организатора.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-broadcast-tower"></i></div>
+          <h3>Интеграция с OBS</h3>
+          <p>Готовые сцены и browser source — подключение за минуты без сложной настройки.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-cogs"></i></div>
+          <h3>Кастомные виджеты</h3>
+          <p>Killfeed, MVP, карта, таймеры и любые дополнительные блоки по вашему техническому заданию.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <span class="section-label">Этапы работы</span>
+      <h2 class="section-title">От идеи до эфира за 4 шага</h2>
+      <div class="process__steps">
+        <div class="process__step" data-num="01">
+          <h3>Бриф и концепт</h3>
+          <p>Обсуждаем формат турнира, стиль и необходимые блоки. Готовим макет и согласуем визуал.</p>
+        </div>
+        <div class="process__step" data-num="02">
+          <h3>Разработка HUD</h3>
+          <p>Вёрстка, анимации и подключение к игровым данным. Тестируем на реальных матчах.</p>
+        </div>
+        <div class="process__step" data-num="03">
+          <h3>Настройка эфира</h3>
+          <p>Помогаем настроить OBS, сцены и резервные сценарии для стабильной трансляции.</p>
+        </div>
+        <div class="process__step" data-num="04">
+          <h3>Запуск и поддержка</h3>
+          <p>Сопровождаем турнир в день эфира и оперативно вносим правки при необходимости.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== КЕЙСЫ ===== -->
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="cases__header">
+      <span class="section-label">Наши работы</span>
+      <h2>Примеры реализованных проектов</h2>
+      <p>Посмотрите, как мы превращаем идеи в профессиональные HUD-интерфейсы</p>
+    </div>
+
+    <div class="cases__grid">
+      <!-- Кейс 1 -->
+      <a href="case-cs2.html" class="case-card">
+        <div class="case-card__image">
+          <img src="assets/images/case-GCL.jpg" alt="Турнирный HUD для CS2" />
+          <span class="case-card__badge">CS2</span>
+          <span class="case-card__play"><i class="fas fa-play"></i></span>
+        </div>
+        <div class="case-card__content">
+          <div class="case-tags">
+            <span>Радар</span>
+            <span>Killfeed</span>
+            <span>Статистика</span>
+          </div>
+          <h3>Турнирный HUD для GOMEL CYBER LEAGUE SEASON 1</h3>
+          <p>Полный набор оверлеев для крупного турнира по CS2 с кастомной анимацией.</p>
+          <span class="case-card__btn">Смотреть кейс <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Кейс 2 -->
+      <a href="case-dota2.html" class="case-card">
+        <div class="case-card__image">
+          <img src="assets/images/case-2.jpg" alt="HUD для Dota 2" />
+          <span class="case-card__badge">Dota 2</span>
+          <span class="case-card__play"><i class="fas fa-play"></i></span>
+        </div>
+        <div class="case-card__content">
+          <div class="case-tags">
+            <span>Герои</span>
+            <span>Карта</span>
+            <span>Ульты</span>
+            <span>Статистика</span>
+            
+          </div>
+          <h3>Стримерский пак для Dota 2</h3>
+          <p>Интерактивный оверлей с живой статистикой героев и предметов.</p>
+          <span class="case-card__btn">Смотреть кейс <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Кейс 3 -->
+      <a href="case-v3.html" class="case-card">
+        <div class="case-card__image">
+          <img src="assets/images/case-LEON.jpg" alt="HUD для LEON.BET" />
+          <span class="case-card__badge">CS:GO</span>
+          <span class="case-card__play"><i class="fas fa-play"></i></span>
+        </div>
+        <div class="case-card__content">
+          <div class="case-tags">
+            <span>Анимация</span>
+            <span>Раунды</span>
+            <span>Радар</span>
+            <span>Статистика</span>
+
+          </div>
+          <h3>Киберспортивный HUD CS2 для LEON.BET</h3>
+          <p>Минималистичный дизайн с акцентом на агентов и их способности.</p>
+          <span class="case-card__btn">Смотреть кейс <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Кейс 4 -->
+      <a href="case-V2.html" class="case-card">
+        <div class="case-card__image">
+          <img src="assets/images/case-1.jpg" alt="HUD для CS2" />
+          <span class="case-card__badge">Mobile</span>
+          <span class="case-card__play"><i class="fas fa-play"></i></span>
+        </div>
+        <div class="case-card__content">
+          <div class="case-tags">
+            <span>Агенты</span>
+            <span>Радар</span>
+            <span>Статистика</span>
+          </div>
+          <h3>Базовый турнирный HUD для GOMEL CYBER LEAGUE</h3>
+          <p>Адаптированный HUD для турниров и команд.</p>
+          <span class="case-card__btn">Смотреть кейс <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- BENEFITS -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <span class="section-label">Преимущества</span>
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="benefits__grid">
+        <div class="benefit">
+          <i class="fas fa-clock"></i>
+          <h3>Быстрые сроки</h3>
+          <p>Стандартный HUD — от 3 дней. Срочные проекты обсуждаем индивидуально.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Стабильность</h3>
+          <p>HUD протестирован на десятках трансляций — без сбоев в решающих моментах.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-code"></i>
+          <h3>Гибкая кастомизация</h3>
+          <p>Любые доработки: от смены цвета до полностью уникального дизайна.</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-handshake"></i>
+          <h3>Партнёрский подход</h3>
+          <p>Работаем как часть вашей команды — от первого созвона до финала турнира.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <span class="section-label">Контакты</span>
+        <h2>Готовы обсудить ваш проект?</h2>
+        <p>Оставьте заявку — мы свяжемся с вами в течение нескольких часов и предложим решение под ваш турнир.</p>
+        <div class="contact__socials">
+          <a href="https://t.me/mrdusea"><i class="fab fa-telegram"></i> Telegram</a>
+          <a href="#"><i class="fab fa-discord"></i> Discord</a>
+          <a href="mailto:dusea.kirill@gmail.com?subject=Заявка%20на%20разработку%20HUD">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+
+      <!--<form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Ваше имя *</label>
+          <input type="text" id="name" placeholder="Как к вам обращаться" required />
+        </div>
+        <div class="form-group">
+          <label for="project">Название проекта *</label>
+          <input type="text" id="project" placeholder="Турнир, лига, стрим..." required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Контакт *</label>
+          <input type="text" id="contact" placeholder="Telegram, Discord или email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" placeholder="Расскажите о формате, датах и пожеланиях"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <i class="fas fa-paper-plane"></i> Отправить заявку
+        </button>
+        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных</p>
+      </form>-->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>&copy; 2026 HUDStudio. Все права защищены.</span>
+      <a href="#contact">Связаться с нами </a>
+    </div>
+  </footer>
+
+  <script src="assets/css/js/main.js"></script>
+</body>
+</html>
